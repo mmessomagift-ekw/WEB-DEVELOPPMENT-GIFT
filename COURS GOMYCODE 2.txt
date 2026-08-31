@@ -1,0 +1,205 @@
+balise HTML
+1. La balise HTML est une balise cruciale. Elle indique au navigateur que le contenu se trouve entre <html> et </html>.
+Les tableaux HTML peuvent être imbriqués, c’est-à-dire qu’un tableau peut être placé à l’intérieur d’un autre tableau.
+La syntaxe d’un commentaire HTML est correctement utilisée avec <!-- et -->.
+
+2. Toutes les pages web ont un seul élément body,  < ; body > ; et < ; /body> ;. afin de comprendre les balises à l'intérieur du body, nous allons les diviser en :
+En-têtes
+Mise en forme du texte et balises de retour à la ligne
+Paragraphes
+Images
+Audio et vidéo
+Liens
+Listes
+Tables
+Boutons
+Formes et entrées
+
+3. <head> ;
+ <title>Ma belle page</title> ;
+ <link rel="icon" href="favicon.ico" type="image/x-icon"/> ;
+</head> ;
+L'élément head contient des informations sur la page web. Il peut contenir de nombreux éléments, tels que Title => ; définit le titre de la page.
+
+4.La norme HTML comporte cinq éléments d'en-tête supplémentaires, définis de manière appropriée de < ; h1 > ; à < ; h6 > ;. Ils sont considérés comme des balises appariées (nous devons les fermer).
+
+5.<b>bold</b> ;.
+ <i>italic</i> ;.
+ <del>supprimée</del>
+<br> : Saute une ligne
+
+6. La balise < ; p > ; définit un paragraphe en HTML, Voici un exemple :
+<p>Mon premier paragraphe</p> ;
+
+7.  Les attributs sont simplement pour expliquer le sujet, sont placés dans la balise d'ouverture, avec un espace après la déclaration de l'élément (ou après un autre attribut s'il y en a plusieurs).
+Examinons un exemple d'en-tête avec un attribut title:
+<h2 title="This is a subheading">Hello, World!</h2> ;
+
+8. La balise < ; img > ; est responsable de l'ajout d'images à votre page HTML. L'attribut "src" est simplement pour Déterminer la source de l'image . L'attribut "alt" est votre plan B si votre image ne se charge pas. Contrairement à la plupart des éléments que nous avons rencontrés jusqu'à présent, l'élément img n'a pas de balise de fermeture.
+<!-- Déclaration img incorrecte --> ;
+<img src="path/to/image/dog.jpg" alt="Un chien" > ; </img> ;
+<!-- Déclaration d'img correcte --> ;
+<img src="path/to/image/dog.jpg" alt="Un chien" > 
+
+9. La balise a:
+Un lien hypertexte permet d’accéder à une autre page web. Il peut aussi diriger vers une autre section de la même page ou être associé à une image.
+<a href="https://gomycode.tn/">Take me to GoMyCode's Website</a> ;
+Les liens permettent aux utilisateurs de naviguer entre différentes pages web; L'attribut "href" définit le chemin d'accès une fois que l'on a cliqué sur le lien.
+
+10. Les liens peuvent également être locaux. Les liens locaux permettent aux utilisateurs de naviguer sur la même page web. En d'autres termes, vous pouvez cliquer sur un lien et vous rendre à la fin de la page ou à un élément de votre page web.
+<a name="TopOfThePage"> ; </a> et <a href="#TopOfThePage"> ; Let's go up Top </a>
+
+11. La balise audio : 
+<audio controls>
+    <source src="test.mp3" type="audio/mpeg">
+        Please Check the audio Extension
+</audio>
+ --- La balise video: The src attribute in the video tag replaces the <source> tag.
+<video width="320" height="240" autoplay>
+	<source src="test.mp4" type="video/mp4" />
+	Please Check the video extension.
+</video>
+--- IFRAME TAG:
+We can also add videos from YouTube by simply using the iframe tag. Just go to YouTube, pick a video, go to Share -> Embed -> Copy tag < iframe >
+ex: <iframe
+	width="420"
+	height="315"
+	src="https://www.youtube.com/embed/zcTFG_F0FRs">
+</iframe>
+
+LISTES HTML:
+LI = represente chaque élément
+--- non ordonnées : <ul>et</ul>
+Les valeurs de type liste non ordonnée comprennent : cercle, disque et carré
+Nous pouvons également modifier le type de style en utilisant l'attribut type: <ul type="disc">
+
+---- Ordonées: <ol>et</ol>
+<!---Nombres romains majuscules --> ; <ol type="I"> ; <li>Créez un dossier nommé "GoMyCode" ; sur votre Bureau</li> ; <li>Créez un nouveau dossier dans le dossier GoMyCode et donnez-lui le nom que vous voulez</li> ; <li>Créez un nouveau dossier à l'intérieur et nommez-le "res"</li> ; <li>Créer un nouveau dossier à l'intérieur et le nommer "css"</li> ; </ol>
+
+LISTE DE DESCRIPTION
+L'élément contient une liste de groupes contenant des termes (spécifiés à l'aide de l'élément <dt>) et des descriptions (fournies par les éléments <dd>)
+ex: <dl> ;
+	<dt>Maison Stark</dt> ;
+	<dd>Le Direwolf</dd> ;
+
+	<dt>Maison Lannister</dt> ;
+	<dd>Le Lion</dd> ;
+
+	<dt>Maison Targaryen</dt> ;
+	<dd>Le dragon à trois têtes</dd> ;
+
+	Maison Baratheon</dt> ;
+	<dd>Le cerf</dd> ;
+</dl> ;
+
+12. Balise div:
+Le <div> ;, un élément de niveau bloc, est comme un composant ou un sac. Il peut contenir de nombreux éléments HTML afin de leur appliquer des modifications en tant que section entière. Il sert aussi à regrouper et organiser du contenu, notamment pour appliquer du CSS.
+ ex: <div> ;
+      <h1>Ceci est la première division</h1> ;
+    </div> ;
+
+13. Balise table:
+Les tableaux HTML sont définis avec la balise < ; table > ;
+
+< ; th > ; les balises sont les noms des colonnes
+< ; tr > ; les balises sont les lignes
+< ; td > ; les balises sont les valeurs des colonnes de la ligne
+ ex: <table border="1"> ;
+      <tr> ;
+       <th> HTML</th> ;
+        <th>CSS</th> ;
+        <th>JS</th> ;
+      </tr> ;
+      <tr> ;
+        <td>Paragraphes</td> ;
+        <td>Sélecteurs</td> ;
+        <td>DOM</td> ;
+      </tr> ;
+      <tr> ;
+        <td>Tables</td> ;
+        <td>Styles</td> ;
+        <td>Éléments</td> ;
+      </tr> ;
+    </table> ;
+
+14. Balise sémantique:
+Les balises sémantiques sont utilisées pour ajouter du sens à notre document HTML. Un code doit être compréhensible par quiconque le lit.
+Notre document est généralement divisé en trois sections différentes:
+< ; header >
+L'en-tête est généralement un groupe d'éléments d'introduction ou d'aide à la navigation. Il peut contenir des éléments tels qu'un logo, un formulaire de recherche, un slogan, etc.
+< ; main >
+La section principale sera expliquée plus en détail dans les prochaines diapositives.
+< ; footer >
+Le footer contient généralement des informations sur l'auteur, des coordonnées, des données sur les droits d'auteur, etc.
+
+15. Balise nav:
+L'élément <nav> ; définit un ensemble de liens de navigation.
+<nav> ;
+<a href="/html/> ; HTML </a> ;
+<a href="/css/> ; CSS </a> ;
+<a href="/js/> ; JavaScript </a> ;
+<a href="/jquery/> ; jQuery </a> ;
+</nav> ;
+
+16. Balise section:
+L'élément <section> ; définit une section dans un document.
+<section>et</section>
+
+17. Balise article:
+L'élément <article> ; définit un article dans un document.
+Il peut s'agir d'un article de blog, d'un article d'actualité ou d'un article de forum.
+ex: <article> ;
+<h1> ; Quels sont les avantages d'être un développeur Web ? <h1> ;
+<!-- Contenu de l'article --> ;
+</article>
+
+18. La balise Aside:
+HTML offre de nombreux éléments sémantiques pour définir des parties distinctes d'une page web.
+Nous allons énumérer les deux éléments sémantiques les plus utilisés :
+L'élément <aside> ; : C'est comme une barre latérale. Il permet de naviguer dans le contenu principal.
+Les éléments <figure> ; et <figcaption> ; : il regroupe les images et les légendes dans un seul élément.
+
+COMMENT CODER UN FORMULAIRE:
+Un formulaire peut être créé avec la balise <form> et </form>
+--- Entrée du formulaire:
+Le composant le plus utile d'un formulaire est la balise d'entrée, qui crée un champ de texte dans lequel les utilisateurs peuvent entrer des données. Voici un exemple:
+<form> ;
+     Recherche <input type = "text" name = "search" /> ;
+ </form> ;
+--- Entrées de sélection:
+Vous pouvez utiliser des éléments <select> ; (avec des éléments <option> ; imbriqués) pour créer une sélection déroulante d'éléments parmi lesquels un utilisateur peut choisir.
+ <select> ;
+        <option value="WebTrack">Web Track</option> ;
+        <option value="AITrack">AI Track</option> ;
+        <option value="GameTrack">Game Track</option> ;
+        <option value="DataScienceTrack">Data Science Track</option> ;
+      </select> 
+--- Zone de texte:
+Si vous voulez que votre utilisateur puisse inclure de nouvelles lignes (en appuyant sur la touche retour) dans son texte, vous pouvez utiliser un élément <textarea> ;
+a. L'attribut rows spécifie le nombre visible de lignes dans une zone de texte.
+b. L'attribut colonnes (cols) spécifie la largeur visible d'une zone de texte.
+ <textarea name="message" cols="30" rows="5"> ;
+        Bienvenue sur GoMyCode
+    </textarea> ;
+--- Les boutons:
+Un élément <button> ; doit être utilisé chaque fois que vous souhaitez créer un bouton cliquable pour effectuer une certaine action sur la page.
+
+<button> ; sont simples à définir, et ont trois valeurs de type différentes:
+
+Submit : soumet les données du formulaire à un serveur.
+Reset : réinitialise toutes les données dans le formulaire actuel.
+Button : n'indique pas de comportement par défaut. Ce type de bouton sera plus utile lorsque nous commencerons à utiliser Javascript.
+ <form> ;
+      <label>Prénom:</label> ;
+      <input type="text" name="firstName" /> ;
+      
+ ;
+      Nom de famille :</label> ;
+      <input type="text" name="lastName" id="lastName" /> ;
+      
+ ;
+      <!-- Ce bouton soumettra le formulaire, entraînant la redirection de la page --> ;
+      <button type="submit">Soumettre le nom</button> ;
+    </form> ;
+
+https://student.learn.gomycode.co/

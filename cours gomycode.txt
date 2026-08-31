@@ -1,0 +1,21 @@
+Git permet de transferer les fichiers VS sur Github
+They are not the same Github saves the files that were transfered from VS Code to Git
+Git helps to not only transfer the files but to see the different modification history on the particular CODE
+mostly used:
+git add .
+git commit -m 'premier commit' 
+
+Pour créer un alias temporaire, qui durera aussi longtemps que votre session de terminal est ouverte, vous pouvez taper:
+
+git config alias.KEYBOARD_SHORTCUT COMMAND
+
+Si vous souhaitez que votre alias fasse partie de votre configuration globale, ajoutez la commande --global après git config. Par exemple, pour aliaser git i à git init globalement, vous devez taper: 
+git config --global alias.i init.
+
+Git est un système de contrôle de version, tandis que GitHub est une plateforme en ligne permettant d'héberger et de partager du code, des fichiers texte et des formats de fichiers plus complexes.
+
+Le forking: La chose logique à faire est donc de faire une copie du dépôt distant de quelqu'un d'autre et de s'assurer qu'il est sous notre nom d'utilisateur afin que nous puissions y pousser du code. Cela garantit que nos expériences avec le dépôt n'affectent pas la version originale.
+
+Cloner: Une fois que vous avez appliqué le "forking" sur le dépôt, vous devez le sélectionner (le dépôt distant que vous venez de créer) et télécharger le code sur votre ordinateur local (c'est-à-dire créer un dépôt local). Pour ce faire, cliquez sur le bouton clone et cela nous fournira l'URL du dépôt distant. Il suffit ensuite de copier l'URL. Dans le terminal, lancez git clone THE_COPYED_ADDRESS.
+
+
