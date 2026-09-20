@@ -1,0 +1,20 @@
+/* lien non visité */
+      .ul {
+          color : tomato ;
+          display: inline;
+          padding: 20px;
+      }
+      /* lien visité */
+      a:visited {
+          color : tomato ;
+      }
+
+      /* élément survolé par la souris */
+      div:hover {
+          color : tomato ;
+      }
+
+      /* lien sélectionné */
+      a:active{
+          color : #0000FF
+      }

@@ -1,0 +1,47 @@
+font-family : Helvetica neue, roboto ;
+
+color : rgb(0, 0, 255) ;
+  /* identique à
+  couleur : bleu ;
+  couleur : #0000ff ;
+  couleur : #0000ff ; - couleur : #00f ; - couleur : #0000ff ; #00f ;
+  color : hsl(0, 100%, 50%) ; */
+
+font-style : bold ;
+/*
+autre valeur possible
+ font-style:normal ;
+ font-style:italic ;
+ font-style:oblique ;
+*/
+
+font-weight : normal ;
+/*
+autre valeur possible
+ font-weight:bold ;
+ font-weight:bold ;
+ font-weight:lighter ;
+ font-weight:100-900
+*/
+
+text-decoration : none ;
+/*
+autre valeur possible
+ décoration du texte : souligné ;
+ décoration de texte : surligné ; /* autre valeur possible
+ text-decoration:line-through ;
+*/
+
+première ligne {
+  letter-spacing : 4px ;
+  espacement des mots : 4px ;
+}
+
+ h1{
+            font-size : 50px
+        }
+
+CSS DISPLAY
+ p {
+        display : inline ;
+      }
