@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>La Table Dorée | Restaurant</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <style>
+    :root{--accent:#d97736;--ink:#28231f}
+    body{color:var(--ink);font-family:system-ui,sans-serif} .navbar-brand span{color:var(--accent)}
+    .hero{min-height:76vh;display:grid;place-items:center;text-align:center;color:#fff;background:linear-gradient(#17120c88,#17120c88),url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=2000&q=85') center/cover}
+    .hero h1{font-size:clamp(2.5rem,6vw,5rem);font-weight:800}.btn-accent{background:var(--accent);color:#fff;border:0}.btn-accent:hover{background:#b85d22;color:#fff}
+    .section-kicker{color:var(--accent);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.8rem}
+    .menu-card img{height:220px;object-fit:cover}.about-img{min-height:340px;width:100%;height:100%;object-fit:cover;border-radius:1rem}
+    footer{background:#211d19;color:#eee} .social a{color:#eee;font-size:1.25rem;margin-left:.75rem}
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-white sticky-top shadow-sm">
+  <div class="container"><a class="navbar-brand fw-bold" href="#accueil">La Table <span>Dorée</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navRestaurant" aria-controls="navRestaurant" aria-expanded="false" aria-label="Ouvrir la navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navRestaurant"><ul class="navbar-nav ms-auto gap-lg-3">
+      <li class="nav-item"><a class="nav-link" href="#accueil">Accueil</a></li><li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+      <li class="nav-item"><a class="nav-link" href="#apropos">À propos de nous</a></li><li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+    </ul></div>
+  </div>
+</nav>
+<header id="accueil" class="hero"><div class="container py-5"><p class="section-kicker text-warning">Saveurs & convivialité</p><h1>Le plaisir est<br>dans l’assiette.</h1><p class="lead my-4">Des produits frais, une cuisine généreuse et des moments à partager.</p><a href="#menu" class="btn btn-accent btn-lg px-4">Découvrir le menu</a></div></header>
+<main>
+<section id="menu" class="py-5"><div class="container py-lg-4"><div class="text-center mb-5"><p class="section-kicker">Notre sélection</p><h2 class="fw-bold display-6">Les incontournables</h2><p class="text-secondary">Des recettes préparées avec passion.</p></div>
+  <div class="row g-4">
+    <div class="col-12 col-md-6 col-lg-4"><article class="card menu-card h-100 border-0 shadow-sm"><img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=900&q=80" class="card-img-top" alt="Salade fraîche et colorée"><div class="card-body p-4"><div class="d-flex justify-content-between gap-2"><h3 class="h5 card-title">Salade du jardin</h3><span class="fw-bold text-nowrap">6 500 FCFA</span></div><p class="card-text text-secondary">Légumes frais, avocat, graines croquantes et vinaigrette maison.</p></div></article></div>
+    <div class="col-12 col-md-6 col-lg-4"><article class="card menu-card h-100 border-0 shadow-sm"><img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=900&q=80" class="card-img-top" alt="Plat de viande accompagné de légumes"><div class="card-body p-4"><div class="d-flex justify-content-between gap-2"><h3 class="h5 card-title">Grillade du chef</h3><span class="fw-bold text-nowrap">9 000 FCFA</span></div><p class="card-text text-secondary">Viande grillée, légumes de saison et sauce signature.</p></div></article></div>
+    <div class="col-12 col-md-6 col-lg-4"><article class="card menu-card h-100 border-0 shadow-sm"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=900&q=80" class="card-img-top" alt="Pizza cuite au four"><div class="card-body p-4"><div class="d-flex justify-content-between gap-2"><h3 class="h5 card-title">Pizza maison</h3><span class="fw-bold text-nowrap">7 500 FCFA</span></div><p class="card-text text-secondary">Pâte artisanale, tomates mûries au soleil et fromage fondant.</p></div></article></div>
+  </div></div></section>
+<section id="apropos" class="py-5 bg-light"><div class="container py-lg-4"><div class="row g-5 align-items-center"><div class="col-12 col-lg-6"><img class="about-img" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=85" alt="Table dressée dans un restaurant chaleureux"></div><div class="col-12 col-lg-6"><p class="section-kicker">Notre histoire</p><h2 class="display-6 fw-bold mb-3">Une cuisine sincère, un accueil chaleureux.</h2><p class="text-secondary">À La Table Dorée, nous croyons que les meilleurs souvenirs se créent autour d’un bon repas. Notre équipe met à l’honneur les ingrédients de saison, les recettes généreuses et le plaisir de recevoir.</p><p class="text-secondary">Que ce soit pour un déjeuner entre collègues ou un dîner en famille, nous vous accueillons dans une ambiance conviviale.</p><a href="#contact" class="btn btn-outline-dark mt-2">Nous contacter</a></div></div></div></section>
+<section id="contact" class="py-5"><div class="container py-lg-4"><div class="row g-5"><div class="col-12 col-lg-5"><p class="section-kicker">Écrivons-nous</p><h2 class="display-6 fw-bold">Une question ou une réservation ?</h2><p class="text-secondary">Envoyez-nous un message. Nous serons ravis de vous répondre.</p><p><i class="bi bi-geo-alt me-2 text-warning"></i>Abidjan, Côte d’Ivoire</p><p><i class="bi bi-clock me-2 text-warning"></i>Du lundi au dimanche, 12 h – 22 h</p></div>
+<div class="col-12 col-lg-7"><form class="row g-3" onsubmit="event.preventDefault(); alert('Merci ! Ce formulaire de démonstration est prêt à être connecté à un service d’envoi.');"><div class="col-12 col-md-6"><label for="nom" class="form-label">Nom complet</label><input id="nom" name="nom" class="form-control form-control-lg" required placeholder="Votre nom"></div><div class="col-12 col-md-6"><label for="email" class="form-label">Adresse e-mail</label><input id="email" name="email" type="email" class="form-control form-control-lg" required placeholder="nom@exemple.com"></div><div class="col-12"><label for="message" class="form-label">Message</label><textarea id="message" name="message" rows="5" class="form-control" required placeholder="Comment pouvons-nous vous aider ?"></textarea></div><div class="col-12"><button class="btn btn-accent btn-lg px-4" type="submit">Envoyer le message <i class="bi bi-arrow-right ms-2"></i></button></div></form></div></div></div></section>
+</main>
+<footer class="py-4"><div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3"><p class="mb-0">© 2026 La Table Dorée. Tous droits réservés.</p><div class="social"><a href="#contact" aria-label="Instagram"><i class="bi bi-instagram"></i></a><a href="#contact" aria-label="Facebook"><i class="bi bi-facebook"></i></a><a href="#contact" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a></div></div></footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body></html>
